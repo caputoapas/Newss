@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>NewSS</title>
+  <title>New Solution Systems</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,9 +19,20 @@
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" type="image/x-icon" href="newss3.ico">
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
+  <script type="text/javascript">
+    function recaptcha_callback(){
+      alert("Botão Enviar Liberado, Você não é um Robô!");
+      $('.btn').prop("disabled", false);
+    }
+</script>
+  
 
 </head>
 
@@ -91,7 +102,7 @@
             <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Web</h4>
-          <p class="text-muted">Na NewSS você conta com a criação e manutenção de sites, desenvolvimento de  plataformas de ecommerce, tudo isso pensado para a geração de resultados.</p>
+          <p class="text-muted">Com a NewSS você conta com a criação e manutenção de sites, desenvolvimento de  plataformas de e-commerce e sistemas on-line, tudo isso pensado para a contribuir na melhoria dos resultados.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -99,7 +110,7 @@
             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Desktop</h4>
-          <p class="text-muted">Desenvolvimento Desktop é o processo de criação de softwares que serão executados em computadores padrão. Assim desenvolvemos sistemas personalizados destinados a ajudar seu dia a dia operacional.</p>
+          <p class="text-muted">Baseado no processo de criação de softwares que serão executados em computadores padrão, desenvolvemos sistemas personalizados destinados a ajudar seu dia a dia operacional.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -107,7 +118,7 @@
             <i class="fas fa-mobile-alt fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Mobile</h4>
-          <p class="text-muted">Aplicações mobile possibilitam experiências mais rápidas e agradáveis ao usuário. Sendo assim personalizamos aplicações agilizando o acesso de seus Clientes e o gerenciamento de sistemas.</p>
+          <p class="text-muted">Possibilitamos experiências ágeis e agradáveis aos usuários, personalizamos aplicações que facilitam o acesso de seus Clientes e principalmente no gerenciamento do sistema.</p>
         </div>
       </div>
     </div>
@@ -118,13 +129,27 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase">Portfólio</h2>
+          <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/logoLH.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>EstaPark</h4>
+            <p class="text-muted">LH Estacionamento</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -138,31 +163,17 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Explore</h4>
-            <p class="text-muted">Graphic Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/ervas.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
+            <h4>SucupiraSystem</h4>
+            <p class="text-muted">Balsamo Sucupira</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -172,11 +183,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/allfixedl.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
+            <h4>AllFixed</h4>
+            <p class="text-muted">Construção</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -186,11 +197,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/esmalteria.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
+            <h4>Esmaltech</h4>
+            <p class="text-muted">Esmalteria</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -200,11 +211,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/farma.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
+            <h4>Farma</h4>
+            <p class="text-muted">Farmácia Sorocabana</p>
           </div>
         </div>
       </div>
@@ -216,8 +227,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase">Sobre Nós</h2>
+          <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
         </div>
       </div>
       <div class="row">
@@ -225,65 +236,67 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/6.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
+                  <h4>2016</h4>
+                  <h4 class="subheading">Ponta pé inicial</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p align="justify" class="text-muted" >Dois Alunos do Terceiro Termo em Análise de Sistemas, pretensos a concluir o curso e sem nenhuma expectativa no mercado, não esperavam receber a proposta para desenvolverem um "Sistema" que gerenciasse seu negócio, um estacionamento privado. A proposta não era tentadora, porém aceitaram o desafio e oito meses depois entregaram o Sistema EstaPark, facilitando assim o trabalho daquele pequeno empresário. </p>
                 </div>
               </div>
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/7.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
+                  <h4>2018</h4>
+                  <h4 class="subheading">Nascimento</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p align="justify" class="text-muted">Agora capazes e motivados, formaram-se e pensaram em tornar acessível a tecnologia aos pequeno empresários, passaram a ser conhecidos no meio empresarial e assim vieram novas propostas, idealizaram, elaboram, desenvolveram e entregaram os projetos em menor tempo ao clientes, a demanda aumentou e com isso um amigo de faculdade entrou para a "equipe", dessa maneira nasce a New Solution Systems.</p>
                 </div>
               </div>
             </li>
-            <li>
+            <li >
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/5.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
+                  <h4>2019</h4>
+                  <h4 class="subheading">Compromisso Social</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p align="justify" class="text-muted">Devido a participações em eventos representando a Fatec, surgiu o convite para ministrarem aulas de arduino como voluntários em um colégio estadual situado em uma comunidade carente na cidade de Lucélia-SP. </p>
                 </div>
               </div>
             </li>
+
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/8.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
+                  <h4>2019...</h4>
+                  <h4 class="subheading">Futuro...</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p align="justify" class="text-muted" >Estarem inseridos no mercado de tecnologia, continuarem a estudar novas linguagens, novos métodos para proporcionarem melhores sistemas e assim serem reconhecidos como referência.</p>
                 </div>
               </div>
             </li>
+            
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <h4>Be Part
-                  <br>Of Our
-                  <br>Story!</h4>
+                <h4>Faça parte
+                  <br>da nossa
+                  <br>História!</h4>
               </div>
             </li>
           </ul>
@@ -298,7 +311,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Time NewSS</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
         </div>
       </div>
       <div class="row">
@@ -307,8 +320,8 @@
             <img class="mx-auto rounded-circle" src="img/team/donha1.jpg" alt="">
             <h4>Rodrigo Daniel Donha</h4>
             <p class="text-muted">Analista de Sistemas</p>
-            <!-- <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
+            <ul class="list-inline social-buttons">
+              <!-- <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
@@ -317,13 +330,13 @@
                 <a href="#">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-              </li>
+              </li> -->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/rodrigo-daniel-donha-4356b0164/" target="_blank">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
-            </ul> -->
+            </ul>
           </div>
         </div>
         <div class="col-sm-4">
@@ -331,8 +344,8 @@
             <img class="mx-auto rounded-circle" src="img/team/jefter1.jpg" alt="">
             <h4>Jefter Allan</h4>
             <p class="text-muted">Analista de Sistemas</p>
-            <!-- <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
+            <ul class="list-inline social-buttons">
+              <!-- <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
@@ -341,13 +354,13 @@
                 <a href="#">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-              </li>
+              </li> -->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/jefter-allan-0a6a82150/" target="_blank">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
-            </ul> -->
+            </ul>
           </div>
         </div>
         <div class="col-sm-4">
@@ -355,8 +368,8 @@
             <img class="mx-auto rounded-circle" src="img/team/william1.jpg" alt="">
             <h4>William Alves Caputo</h4>
             <p class="text-muted">Analista de Sistemas</p>
-            <!-- <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
+            <ul class="list-inline social-buttons">
+              <!-- <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
@@ -365,19 +378,19 @@
                 <a href="#">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-              </li>
+              </li> -->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/william-alves-caputo-891b021a5/" target="_blank">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
-            </ul> -->
+            </ul>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          <!-- <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p> -->
         </div>
       </div>
     </div>
@@ -417,7 +430,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Contato</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
         </div>
       </div>
       <div class="row">
@@ -445,10 +458,26 @@
                 </div>
               </div>
               <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
+              <!-- <div class="col-lg-12 text-center">
+                  <center><div class="g-recaptcha" data-sitekey="6Lc1Lq8UAAAAANo84OvTdatqg-WZK3eshSl-uuua" data-callback="recaptcha_callback" ></div> </center>
+                  <p class="help-block text-danger"></p> 
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar Menssagem</button>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" disabled>Enviar Menssagem</button>
+              </div> -->
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                    <center><div class="g-recaptcha" data-sitekey="6Lc1Lq8UAAAAANo84OvTdatqg-WZK3eshSl-uuua" data-callback="recaptcha_callback" ></div> </center>
+                </div> 
               </div>
+              <div class="col-md-6 text-center">
+                <div class="form-group">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" disabled>Enviar Menssagem</button>
+                </div> 
+              </div>
+
             </div>
           </form>
         </div>
@@ -500,71 +529,76 @@
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Luck</h2>
-                <p class="item-intro text-muted">Aço Inox</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-luck.jpg" alt="">
-                <p>Parceria criada com o intuito de organizar orçamentos, gerenciar serviços e controlar materiais em estoque. A NewSS criou um sistema que leva agilidade e praticidade para as atividades diarias da empresa </p>
-                <ul class="list-inline">
-                  <li>Data: Dezembro 2018</li>
-                  <li>Cliente: Luck</li>
-                  <li>Categoria: Aço Inox</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Fechar</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">LH Estacionamento</h2>
+                  <p class="item-intro text-muted">Estacionamento</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/logoLH.jpg" alt="">
+                  <p>Programa Desktop para Gerenciamento de Entrada e Saída de carros e motos</p>
+                  <ul class="list-inline">
+                    <li>Data: Dezembro 2017</li>
+                    <li>Cliente: LH Estacionamento</li>
+                    <li>Categoria: Programas Desktop</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Fechar</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  
 
   <!-- Modal 2 -->
   <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Parceiro</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Luck</h2>
+                  <p class="item-intro text-muted">Aço Inox</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/luck.jpg" alt="">
+                  <p>Parceria criada com o intuito de organizar orçamentos, gerenciar serviços e controlar materiais em estoque. 
+                    A NewSS criou um sistema que leva agilidade e praticidade para as atividades diarias da empresa. 
+                    O site foi criado para ser um demonstrativo do que o cliente trabalha em sua empresa,
+                    Link Demonstrativo: <a href="http://inox.newss.com.br" target="_blank" class="item-intro text-muted"><b>inox.newss.com.br</b></a> </p>
+                  <ul class="list-inline">
+                    <li>Data: Dezembro 2018</li>
+                    <li>Cliente: Luck</li>
+                    <li>Categoria: Programas Desktop/Site</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Fechar</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  
 
   <!-- Modal 3 -->
   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
@@ -580,18 +614,20 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2 class="text-uppercase">Balsamo Sucupira</h2>
+                <p class="item-intro text-muted">Loja Virtual</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/ervas.jpg" alt="">
+                <p>Loja Virtual completa para venda de produtos com pagamentos pelo PagSeguro
+                   e utilizando o CORREIOS como meio de envio de mercadorias. 
+                   Link Demonstrativo: <a href="http://sucupira.newss.com.br" target="_blank" class="item-intro text-muted"><b>sucupira.newss.com.br</b></a></p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
+                  <li>Data: Março 2019</li>
+                  <li>Cliente: Cia das Ervas</li>
+                  <li>Categoria: E-Commerce</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Fechar</button>
               </div>
             </div>
           </div>
@@ -614,18 +650,19 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2 class="text-uppercase">AllFixed</h2>
+                <p class="item-intro text-muted">Site Demonstrativo</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/allfixedl.jpg" alt="">
+                <p>Site construido para apresentação em uma reunião de negócios. 
+                  Link Demonstrativo: <a href="http://allfixed.newss.com.br" target="_blank" class="item-intro text-muted"><b>allfixed.newss.com.br</b></a> </p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
+                  <li>Data: Novembro 2019</li>
+                  <li>Cliente: AllFixed</li>
+                  <li>Categoria: Site</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Fechar</button>
               </div>
             </div>
           </div>
@@ -648,18 +685,19 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2 class="text-uppercase">Esmaltech</h2>
+                <p class="item-intro text-muted">Esmalteria</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/esmalteria.jpg" alt="">
+                <p>Pagina contruida para que o cliente pudesse exibir o dia-dia da esmalteria, com fotos e textos personalizados.
+                   Link Demonstrativo: <a href="http://esmalteria.newss.com.br" target="_blank" class="item-intro text-muted"><b>esmalteria.newss.com.br</b></a></p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
+                  <li>Data: Julho 2019</li>
+                  <li>Cliente: Clau e Lidi</li>
+                  <li>Categoria: Site</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Fechar</button>
               </div>
             </div>
           </div>
@@ -682,18 +720,19 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2 class="text-uppercase">Farma</h2>
+                <p class="item-intro text-muted">Farmácia</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/farma.jpg" alt="">
+                <p>Loja Virtual completa para venda de produtos com pagamentos pelo PagSeguro e utilizando o CORREIOS como meio de envio de mercadorias. 
+                  Link Demonstrativo: <a href="http://farmacia.newss.com.br" target="_blank" class="item-intro text-muted"><b>farmacia.newss.com.br</b></a></p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
+                  <li>Data: Maio 2020</li>
+                  <li>Cliente: Farmácia Sorocabana</li>
+                  <li>Categoria: E-Commerce</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Fechar</button>
               </div>
             </div>
           </div>
